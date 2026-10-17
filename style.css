@@ -1,0 +1,95 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f9;
+    color: #222;
+    padding: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: #1f4e79;
+    margin-bottom: 30px;
+}
+
+section {
+    max-width: 900px;
+    margin: 0 auto 30px;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #333;
+    background-color: white;
+}
+
+.item {
+    flex: 0 1 100px;
+    min-width: 0;
+    min-height: 90px;
+    padding: 12px;
+    background-color: lightblue;
+    border: 1px solid #3498db;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ví dụ 1: 5 Flex Item, Item 2 phát triển */
+.example1 .grow {
+    flex-grow: 1;
+    background-color: lightcoral;
+}
+
+/* Ví dụ 2: so sánh tỷ lệ phát triển */
+.example2 .grow1 {
+    flex-grow: 1;
+    background-color: #b7e4c7;
+}
+
+.example2 .grow2 {
+    flex-grow: 2;
+    background-color: #ffd166;
+}
+
+.example2 .grow3 {
+    flex-grow: 3;
+    background-color: #cdb4db;
+}
+
+/* Ví dụ 3: initial đặt flex-grow về 0 */
+.example3 .initial {
+    flex-grow: initial;
+    background-color: #ffcad4;
+}
+
+/* Ví dụ 4: minh họa inherit */
+.parent {
+    flex-grow: 2;
+}
+
+.example4 .inherit {
+    flex-grow: inherit;
+    background-color: #bde0fe;
+}

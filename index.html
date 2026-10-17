@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành CSS Flex Grow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>THỰC HÀNH CSS FLEX-GROW</h1>
+
+    <section>
+        <h2>Ví dụ 1: flex-grow với 5 Flex Item</h2>
+        <p>Item 2 có flex-grow: 1 nên nhận thêm phần không gian còn trống.</p>
+
+        <div class="container example1">
+            <div class="item">Item 1</div>
+            <div class="item grow">Item 2<br>flex-grow: 1</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Ví dụ 2: So sánh flex-grow</h2>
+        <p>Ba Item có flex-grow lần lượt là 1, 2 và 3.</p>
+
+        <div class="container example2">
+            <div class="item grow1">Grow: 1</div>
+            <div class="item grow2">Grow: 2</div>
+            <div class="item grow3">Grow: 3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Ví dụ 3: flex-grow: initial</h2>
+        <div class="container example3">
+            <div class="item">Item 1</div>
+            <div class="item initial">Item 2 - initial</div>
+            <div class="item">Item 3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Ví dụ 4: flex-grow: inherit</h2>
+        <div class="parent">
+            <div class="container example4">
+                <div class="item">Item 1</div>
+                <div class="item inherit">Item 2 - inherit</div>
+                <div class="item">Item 3</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
